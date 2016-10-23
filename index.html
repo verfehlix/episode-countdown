@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="ec.css">
+    </head>
+    <body>
+
+        <h1 align="center"> Episode Countdown</h1>
+
+        <div id="listContainer">
+            <ul class="list">
+                <li class="listItem"v-for="show in showsSortedByDateDesc" v-if="show.nextEpisodeDate !== 'None'">
+                    <div class="showTitle">
+                        {{ show.name }}
+                    </div>
+                    <div class="showTimeDisplay">
+                        {{ show.nextEpisodeDate }}
+                    </div>
+                    <div class="showTimeString">
+                        {{ show.nextEpisodeString }}
+                    </div>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+
+        <script src="node_modules\moment\min\moment.min.js"></script>
+        <script src="node_modules\vue\dist\vue.js"></script>
+        <script src="node_modules\vue-resource\dist/vue-resource.min.js"></script>
+        <script src="ec.js"></script>
+    </body>
+</html>

@@ -4,7 +4,9 @@
   "description": "",
   "main": "ec.js",
   "dependencies": {
-    "vue": "^2.0.3"
+    "moment": "^2.15.1",
+    "vue": "^2.0.3",
+    "vue-resource": "^1.0.3"
   },
   "devDependencies": {},
   "scripts": {
