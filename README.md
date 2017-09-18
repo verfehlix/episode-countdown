@@ -1,5 +1,7 @@
 # episode-countdown
 
+Simple episode countdown display (i.e. *"when will the next episode air?"*) built with [vuejs](https://github.com/vuejs/vue).
+
 ![screenshot](https://cloud.githubusercontent.com/assets/7032914/19628777/6e3e8e60-9965-11e6-9e49-323696496f70.PNG)
 
 ## Usage
