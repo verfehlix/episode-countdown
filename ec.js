@@ -18,7 +18,7 @@ function getShowInfo(showId, container){
     .then((response) => {
         // success callback
 
-        var showObjectFull = JSON.parse(response.body).tvShow;
+        var showObjectFull = response.body.tvShow;
 
         var showObject = {
             name: showObjectFull.name,
